@@ -144,7 +144,7 @@ add_action( 'wp_enqueue_scripts', 'initwork_scripts' );
 *
 */
 
-/**
+
 
 function enable_fontawesome(){
 
@@ -155,7 +155,6 @@ function enable_fontawesome(){
 add_action('wp_enqueue_scripts', 'enable_fontawesome');
 
 
-*/
 
 
 
