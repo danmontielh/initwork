@@ -45,6 +45,11 @@ function initwork_setup() {
 		'menu-1' => esc_html__( 'Primary', 'initwork' ),
 	) );
 
+
+	// Enable support Navs Bootstrap
+
+	require_once('wp-bootstrap-navwalker.php');
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
