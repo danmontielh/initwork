@@ -180,3 +180,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// default hide admin bar
+
+add_filter('show_admin_bar','__return_false');
