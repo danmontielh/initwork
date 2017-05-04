@@ -12,14 +12,7 @@
  */
 
 if ( ! function_exists( 'initwork_setup' ) ) :
-/**
- * Framework Theme based Underscores http://underscores.me/
- * Support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
+
 function initwork_setup() {
 	/*
 	 * Make theme available for translation.
