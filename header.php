@@ -23,10 +23,35 @@
 
 <div class="main">
 	
-<div class="container"> <!-- Choice container fluid or default container -->
+<header> <!-- Choice container fluid or default container -->
 	
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <a class="navbar-brand" href="#">Navbar</a>
+   <?php
+   wp_nav_menu([
+     'menu'            => 'primary',
+     'theme_location'  => 'primary',
+     'container'       => 'div',
+     'container_id'    => 'bs4navbar',
+     'container_class' => 'collapse navbar-collapse',
+     'menu_id'         => false,
+     'menu_class'      => 'navbar-nav mr-auto',
+     'depth'           => 2,
+     'fallback_cb'     => 'bs4navwalker::fallback',
+     'walker'          => new bs4navwalker()
+   ]);
+   ?>
+ </nav>
+
+
+</header>
+
 
 </div>
 
 
-</div>
+
+
