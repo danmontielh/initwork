@@ -12,7 +12,7 @@
  */
 
 if ( ! function_exists( 'initwork_setup' ) ) :
-
+/* Declarate */
 function initwork_setup() {
 	/*
 	 * Make theme available for translation.
