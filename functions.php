@@ -42,13 +42,13 @@ function initwork_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'initwork' ),
+		'primary' => esc_html__( 'Primary', 'initwork' ),
 	) );
 
 
 	// Enable support Navs Bootstrap
 
-	require_once('wp-bootstrap-navwalker.php');
+	require_once('bs4navwalker.php');
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
